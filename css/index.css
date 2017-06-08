@@ -1,0 +1,485 @@
+/*CSS RESET*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+
+.main {
+  font-family: "PT Sans";
+}
+
+a {
+  cursor: pointer;
+}
+
+                                /*NAV BAR*/
+
+
+.logo {
+  background-color: #F5005B;
+  background-image: url(../images/filmclub.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  height: 10em;
+  width: 9em;
+}
+
+.nav-header {
+  background: #7DDFE8;
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  height: 6.4em;
+  text-align: center;
+}
+
+.nav-header a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.nav-header a:hover {
+  background: #FFB54F;
+}
+
+.nav-square1 {
+  background: #00A5BF;
+  height: 6.4em;
+  line-height: 6.4em;
+  width: 6em;
+}
+
+.nav-square2 {
+  background: #00B7D3;
+  height: 6.4em;
+  line-height: 6.4em;
+  width: 6em;
+}
+
+.nav-square3 {
+  background: #00D5E7;
+  height: 6.4em;
+  line-height: 6.4em;
+  width: 6em;
+}
+
+                            /*HEADER*/
+
+.header-text {
+  margin-bottom: -2%;
+  padding-top: 2%;
+  padding-left: 3%;
+}
+
+.header-text h1 {
+  color: #0B1942;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.subheader-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+h2 {
+  background: #0B1942;
+  color: #FFF;
+  font-size: 35px;
+  font-weight: 400;
+  padding: 2% 0 0 3%;
+  width: 7em;
+}
+
+.subheader p {
+  font-size: 23px;
+  font-weight: 400;
+  margin-top: 4%;
+  width: 15em;
+}
+
+                                /*BODY*/
+
+.up-next {
+  background: #0B1942;
+  width: 100%;
+}
+
+.movies {
+  display: flex;
+}
+
+.movie-item {
+  background: #E2E2E2;
+  color: #0B1942;
+  display: flex;
+  height: 32.5vw;
+  margin: 2%;
+  width: 45%;
+}
+
+.movie-item a {
+  color: #00B7D3;
+  font-size: 35px;
+}
+
+.movie-item a:hover {
+  color: #FFB54F;
+}
+
+.movie-poster {
+  background-position: center;
+  background-size: cover;
+  height: 30vw;
+  margin: 3%;
+  width: 20vw;
+}
+
+.movie-text {
+  font-size: 23px;
+  padding-left: 2%;
+  padding-top: 4%;
+  white-space: nowrap;
+}
+
+hr {
+  height: 1px;
+  border-top: 1px solid #0B1942;
+  margin: 1em -6em;
+  margin-left: 0;
+}
+
+ul {
+  list-style-type: circle;
+  padding: 6%;
+  padding-left: 17%;
+}
+
+#rashomon {
+  background-image: url(../images/rashomon-poster.jpg);
+}
+
+#great-train {
+  background-image: url(../images/great-train-poster.jpg);
+}
+
+#bicycle-thief {
+  background-image: url(../images/bicycle-thief-poster.jpg);
+}
+
+#nosferatu {
+  background-image: url(../images/nosferatu-poster.jpg);
+  margin-top: 13%;
+}
+
+#metropolis {
+  background-image: url(../images/metropolis-poster.jpg);
+  margin-top: 13%;
+}
+
+
+                     /*UPCOMING MOVIES SIDE BAR*/
+
+.side-movies {
+  background: #E2E2E2;
+  margin: 2%;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-bottom: 3%;
+  padding-top: 1%;
+  width: 45%;
+}
+
+.side-movies > div {
+  display: flex;
+  flex-basis: calc(50%);
+  flex-direction: column;
+}
+
+.each-movie {
+  margin-left: 3%;
+  margin-right: -5%;
+}
+
+.each-movie a {
+  color: #00B7D3;
+}
+
+.each-movie a:hover {
+  color: #FFB54F;
+}
+
+.each-movie a, span{
+  font-size: 23px;
+  padding-left: 4%;
+}
+
+                              /*FOOTER*/
+
+footer {
+  background: #7DDFE8;
+  color: #FFF;
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  height: 6.4em;
+  text-align: center;
+}
+
+footer a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+footer a:hover{
+  background: #FFB54F;
+}
+
+.footer-text {
+  font-size: 25px;
+  padding-left: 53%;
+  padding-top: 5%;
+  white-space: nowrap;
+}
+
+                        /*TABLET BREAKPOINT*/
+
+@media screen and (max-width: 768px) {
+
+  .nav-square1 {
+    height: 6.4em;
+    line-height: 6.4em;
+    width: 5em;
+  }
+
+  .nav-square2 {
+    height: 6.4em;
+    line-height: 6.4em;
+    width: 5em;
+  }
+
+  .nav-square3 {
+    height: 6.4em;
+    line-height: 6.4em;
+    width: 5em;
+  }
+
+  .header h2 {
+    width: 6.75em;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .subheader p {
+    width: 10em;
+  }
+
+  .up-next {
+    /*width: 50em;*/
+  }
+
+  .movies {
+    flex-direction: column;
+  }
+
+  .movie-item {
+    height: 65vw;
+    margin-right: 3em;
+    width: 90vw;
+  }
+
+  .movie-item .movie-poster {
+    height: 60vw;
+    width: 41vw;
+  }
+
+  hr {
+    margin-right: -2vw;
+  }
+
+  .side-movies {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 90vw;
+  }
+
+  .side-movies > div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .side-movies img {
+    /*height: 35vw;*/
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 24vw;*/
+  }
+
+  #nosferatu {
+    margin-top: .5em;
+  }
+
+  #metropolis {
+    margin-top: .5em;
+  }
+
+  .footer-text {
+    padding-left: 23%;
+    padding-top: 7.5%;
+  }
+
+
+
+                      /*MOBILE BREAKPOINT*/
+
+@media screen and (max-width: 544px) {
+
+  .logo{
+    height: 19.2vw;
+    width: 20vw;
+  }
+
+  .nav-header {
+    flex-direction: column;
+    font-size: 10px;
+    height: 6.4em;
+    width: 79vw;
+  }
+
+  .nav-square1 {
+    height: 6.4vw;
+    line-height: 6.4vw;
+    width: 80vw;
+  }
+
+  .nav-square2 {
+    height: 6.4vw;
+    line-height: 6.4vw;
+    width: 80vw;
+  }
+
+  .nav-square3 {
+    height: 6.4vw;
+    line-height: 6.4vw;
+    width: 80vw;
+  }
+
+  .header-text h1 {
+    font-size: 25px;
+  }
+
+  .subheader-wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 5vw;
+  }
+
+  .header h2 {
+    width: 15em;
+    margin-left: 3%;
+    margin-top: 5%;
+  }
+
+  .header-text {
+    margin-left: 2%;
+    margin-top: 3%;
+  }
+
+  .subheader p {
+    font-size: 12px;
+    margin-left: 3%;
+    padding: 1%;
+    width: 26em;
+  }
+
+  .movies {
+    padding-left: 3vw;
+  }
+
+  .movie-item {
+    height: 75vw;
+  }
+
+  .movie-text a, span, ul, h4 {
+    font-size: 5vw;
+    padding: 0;
+  }
+
+  .movie-text ul {
+    padding-left: 7vw;
+  }
+
+  .movie-poster {
+    height: 50vw;
+    width: 35vw;
+  }
+
+  .side-movies {
+    flex-wrap: wrap;
+  }
+
+  .each-movie a {
+    font-size: 3.5vw;
+    padding-left: 5vw;
+  }
+
+  .each-movie span {
+    font-size: 3.5vw;
+    padding-left: 5vw;
+  }
+
+
+
+  footer {
+    flex-direction: column;
+    font-size: 10px;
+    height: 30vw;
+    width: 100vw;
+  }
+
+  footer .nav-square1 {
+    width: 100vw;
+  }
+
+  footer .nav-square2 {
+    width: 100vw;
+  }
+
+  footer .nav-square3 {
+    width: 100vw;
+  }
+
+  .footer-text {
+    font-size: 10px;
+    padding-right: 23vw;
+    padding-top: 5vw;
+  }
+
+}

@@ -1,0 +1,331 @@
+/*CSS RESET*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.main {
+  font-family: "PT Sans";
+}
+
+a {
+  cursor: pointer;
+}
+
+
+                              /*NAV BAR*/
+
+
+.logo {
+background-color: #F5005B;
+background-image: url(../images/filmclub.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+float: left;
+height: 11vw;
+width: 10vw;
+}
+
+.nav-header {
+background: #7DDFE8;
+display: flex;
+flex-direction: row;
+font-size: 1.8vw;
+height: 11vw;
+text-align: center;
+}
+
+.nav-header a {
+color: #FFF;
+text-decoration: none;
+}
+
+.nav-header a:hover {
+background: #FFB54F;
+}
+
+.nav-square1 {
+background: #00A5BF;
+height: 11vw;
+line-height: 11vw;
+width: 10vw;
+}
+
+.nav-square2 {
+background: #00B7D3;
+height: 11vw;
+line-height: 11vw;
+width: 10vw;
+}
+
+.nav-square3 {
+background: #00D5E7;
+height: 11vw;
+line-height: 11vw;
+width: 10vw;
+}
+
+                            /*BODY*/
+h1 {
+  font-size: 4vw;
+  font-weight: 400;
+  padding: 2vw;
+}
+
+.main-form {
+  font-size: 1.8vw;
+  margin: 1.5vw;
+  padding-left: 2vw;
+}
+
+.pic-select input{
+  margin-top: 1vw;
+}
+
+.text-entry {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 40vw;
+  justify-content: flex-end;
+  margin-top: -30vw;
+  margin-bottom: 20vw;
+}
+
+.text-entry > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 1vw;
+  padding-left: 2vw;
+  padding-right: 3vw;
+}
+
+.text-entry input{
+  border: 2px solid #EAEAEA;
+  border-radius: 2px;
+  height: 2.5vw;
+  width: 20vw;
+}
+
+.profile-pic img {
+  border-radius: 300px;
+  height: 30vw;
+  margin: 2vw;
+  width: 30vw;
+}
+
+.genres {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 1.5vw;
+  padding-top: 1.5vw;
+}
+
+.genres > div {
+  align-items: center;
+  display: flex;
+  flex-basis: 30%;
+  padding: .8vw;
+}
+
+.genres input {
+  margin-right: .3vw;
+}
+
+textarea {
+  border: 2px solid #C5C5C5;
+  width: 60vw;
+}
+
+button {
+  background: #F5005B;
+  color: #FFF;
+  margin-bottom: 2vw;
+  margin-top: 2vw;
+  padding: 2vw;
+}
+
+
+
+
+
+
+
+                            /*FOOTER*/
+
+footer {
+background: #7DDFE8;
+color: #FFF;
+display: flex;
+flex-direction: row;
+font-size: 1.8vw;
+height: 11vw;
+text-align: center;
+}
+
+footer a {
+color: #FFF;
+text-decoration: none;
+}
+
+footer a:hover{
+background: #FFB54F;
+}
+
+.footer-text {
+font-size: 1.8vw;
+padding-left: 50vw;
+padding-top: 5vw;
+white-space: nowrap;
+}
+
+                          /*TABLET BREAKPOINT*/
+
+@media screen and (max-width: 768px) {
+
+
+  .text-entry {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .text-entry > div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1vw;
+    padding-left: 2vw;
+    padding-right: 3vw;
+  }
+
+  .text-entry input{
+    border: 2px solid #EAEAEA;
+    border-radius: 2px;
+    height: 3.5vw;
+    width: 40vw;
+  }
+
+  .text-entry .email {
+    margin-bottom: 10vw;
+  }
+
+  .genres > div {
+    flex-basis: 40%;
+  }
+
+  textarea {
+    height: 10vw;
+    width: 90vw;
+  }
+
+
+}
+
+
+
+                          /*MOBILE BREAKPOINT*/
+
+@media screen and (max-width: 544px) {
+
+  .logo{
+    height: 19.3vw;
+    width: 20vw;
+  }
+
+  .nav-header {
+    flex-direction: column;
+    font-size: 10px;
+    height: 6.4em;
+    width: 79vw;
+  }
+
+  .nav-square1 {
+    height: 6.4vw;
+    line-height: 6.4vw;
+    width: 80vw;
+  }
+
+  .nav-square2 {
+    height: 6.4vw;
+    line-height: 6.4vw;
+    width: 80vw;
+  }
+
+  .nav-square3 {
+    height: 6.4vw;
+    line-height: 6.4vw;
+    width: 80vw;
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
+
+  .main-form {
+    font-size: 3vw;
+  }
+
+  .profile-pic img{
+    height: 88vw;
+    width: 88vw;
+  }
+
+  .text-entry {
+    padding-top: 30vw;
+    margin-left: -2vw;
+  }
+
+  .text-entry input {
+    height: 5vw;
+    width: 90vw;
+  }
+
+  .text-entry .email {
+    margin-bottom: 0;
+  }
+
+  .genres {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    font-size: 10px;
+    height: 30vw;
+    width: 100vw;
+  }
+
+  footer .nav-square1 {
+    width: 100vw;
+  }
+
+  footer .nav-square2 {
+    width: 100vw;
+  }
+
+  footer .nav-square3 {
+    width: 100vw;
+  }
+
+  .footer-text {
+    font-size: 10px;
+    line-height: 10px;
+    padding-left: 0vw;
+    padding-top: 5vw;
+  }
+}

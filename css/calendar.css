@@ -1,0 +1,236 @@
+                            /*CSS RESET*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.main {
+  font-family: "PT Sans";
+}
+
+a {
+  cursor: pointer;
+}
+
+
+                             /*NAV BAR*/
+
+
+.logo {
+background-color: #F5005B;
+background-image: url(../images/filmclub.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+float: left;
+height: 11vw;
+width: 10vw;
+}
+
+.nav-header {
+background: #7DDFE8;
+display: flex;
+flex-direction: row;
+font-size: 1.8vw;
+height: 11vw;
+text-align: center;
+}
+
+.nav-header a {
+color: #FFF;
+text-decoration: none;
+}
+
+.nav-header a:hover {
+background: #FFB54F;
+}
+
+.nav-square1 {
+background: #00A5BF;
+height: 11vw;
+line-height: 11vw;
+width: 10vw;
+}
+
+.nav-square2 {
+background: #00B7D3;
+height: 11vw;
+line-height: 11vw;
+width: 10vw;
+}
+
+.nav-square3 {
+background: #00D5E7;
+height: 11vw;
+line-height: 11vw;
+width: 10vw;
+}
+
+
+
+                                    /*BODY*/
+
+.main {
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 6vw;
+  font-weight: 400;
+  padding: 4vw;
+}
+
+h3 {
+  font-size: 4.5vw;
+  font-weight: 400;
+  color: #FFF;
+  padding: 3vw;
+}
+
+.calendar {
+  background: #0B1942;
+  padding-bottom: 4vw;
+  width: 100vw;
+}
+
+.month {
+  color: #FFF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1vw;
+  font-weight: 400;
+  width: 100vw;
+}
+
+.day-cell {
+  background: #FFF;
+  border: 1px solid #0B1942;
+  flex-basis: calc(100vw / 7);
+  height: 12vw;
+}
+
+.meetup-day-cell{
+  background: #F5005B;
+  border: 1px solid #0B1942;
+  flex-basis: calc(100vw / 7);
+  heigh: 12vw;
+}
+
+.day-number {
+  background: #0B1942;
+  font-size: 1.5vw;
+  height: 3vw;
+  line-height: 3vw;
+  width: 3.5vw;
+  text-align: center;
+}
+
+
+
+
+                                    /*FOOTER*/
+
+footer {
+background: #7DDFE8;
+color: #FFF;
+display: flex;
+flex-direction: row;
+font-size: 1.8vw;
+height: 11vw;
+text-align: center;
+}
+
+footer a {
+color: #FFF;
+text-decoration: none;
+}
+
+footer a:hover{
+background: #FFB54F;
+}
+
+.footer-text {
+font-size: 1.8vw;
+padding-left: 50vw;
+padding-top: 5vw;
+white-space: nowrap;
+}
+
+
+                              /*MOBILE BREAKPOINT*/
+
+@media screen and (max-width: 544px) {
+
+  .logo{
+    height: 19vw;
+    width: 20vw;
+  }
+
+  .nav-header {
+    flex-direction: column;
+    font-size: 10px;
+    height: 6.4em;
+    width: 79vw;
+  }
+
+  .nav-square1 {
+    height: 6.4vw;
+    line-height: 6.4vw;
+    width: 80vw;
+  }
+
+  .nav-square2 {
+    height: 6.4vw;
+    line-height: 6.4vw;
+    width: 80vw;
+  }
+
+  .nav-square3 {
+    height: 6.4vw;
+    line-height: 6.4vw;
+    width: 80vw;
+  }
+
+  .day-number {
+    font-size: 3vw;
+    height: 5vw;
+    line-height: 5vw;
+    width: 4.5vw;
+  }
+
+  footer {
+    flex-direction: column;
+    font-size: 10px;
+    height: 30vw;
+    width: 100vw;
+  }
+
+  footer .nav-square1 {
+    width: 100vw;
+  }
+
+  footer .nav-square2 {
+    width: 100vw;
+  }
+
+  footer .nav-square3 {
+    width: 100vw;
+  }
+
+  .footer-text {
+    font-size: 10px;
+    line-height: 10px;
+    padding-left: 0vw;
+    padding-top: 5vw;
+  }
+}
